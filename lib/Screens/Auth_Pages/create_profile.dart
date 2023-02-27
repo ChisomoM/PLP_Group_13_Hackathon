@@ -26,68 +26,70 @@ class _CreateProfileState extends State<CreateProfile> {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              Column(children: [
-                Row(children: [
-                  IconButton(
-                      onPressed: () {}, icon: const Icon(Icons.arrow_back))
-                ]),
-                // ignore: prefer_const_constructors
-                CircleAvatar(
-                  radius: 64,
-                  backgroundImage: AssetImage('assetName'),
-                ),
-
-                //Username Input
-                const Padding(
-                  padding: EdgeInsets.only(top: 12.0),
-                  child: Text(
-                    "Username",
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
+              Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(children: [
+                      IconButton(
+                          onPressed: () {}, icon: const Icon(Icons.arrow_back))
+                    ]),
+                    // ignore: prefer_const_constructors
+                    CircleAvatar(
+                      radius: 64,
+                      backgroundImage: AssetImage("assets/OTP.png"),
                     ),
-                  ),
-                ),
-                TextFieldInput(
-                    hintText: 'Your Username',
-                    isPass: false,
-                    textInputType: TextInputType.name,
-                    textEditingController: _textController),
 
-                //First Name Input
-                const Padding(
-                  padding: EdgeInsets.only(top: 12.0),
-                  child: Text(
-                    "First Name",
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
+                    //Username Input
+                    const Padding(
+                      padding: EdgeInsets.only(top: 12.0),
+                      child: Text(
+                        "Username",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-                TextFieldInput(
-                    hintText: 'Your First Name',
-                    isPass: false,
-                    textInputType: TextInputType.name,
-                    textEditingController: _textController),
+                    TextFieldInput(
+                        hintText: 'Your Username',
+                        isPass: false,
+                        textInputType: TextInputType.name,
+                        textEditingController: _textController),
 
-                //First Last Name
-                const Padding(
-                  padding: EdgeInsets.only(top: 12.0),
-                  child: Text(
-                    "Last Name",
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
+                    //First Name Input
+                    const Padding(
+                      padding: EdgeInsets.only(top: 12.0),
+                      child: Text(
+                        "First Name",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-                TextFieldInput(
-                    hintText: 'Your Last Name',
-                    isPass: false,
-                    textInputType: TextInputType.name,
-                    textEditingController: _textController),
-              ]),
+                    TextFieldInput(
+                        hintText: 'Your First Name',
+                        isPass: false,
+                        textInputType: TextInputType.name,
+                        textEditingController: _textController),
+
+                    //First Last Name
+                    const Padding(
+                      padding: EdgeInsets.only(top: 12.0),
+                      child: Text(
+                        "Last Name",
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    TextFieldInput(
+                        hintText: 'Your Last Name',
+                        isPass: false,
+                        textInputType: TextInputType.name,
+                        textEditingController: _textController),
+                  ]),
               Column(children: [
                 Padding(
                   padding: const EdgeInsets.only(bottom: 1),

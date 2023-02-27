@@ -105,13 +105,13 @@ class _OTPPage1State extends State<OTPPage1> {
                           ],
                           borderRadius: BorderRadius.circular(25),
                         ),
-                        child: Padding(
+                        child: const Padding(
                           padding:
                               EdgeInsets.only(left: 24.0, top: 24, right: 24),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: const [
+                            children: [
                               Text(
                                 'Verify',
                                 style: TextStyle(
